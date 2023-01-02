@@ -1,0 +1,285 @@
+
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+        .ul {
+            display: flex;
+        }
+
+        .list {
+            list-style: none;
+            margin: 10px 20px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list:hover {
+            padding: 3px 5px;
+            background-color: rgb(68, 148, 254);
+            box-shadow: 2px 3px 7px #012d5f;
+            cursor: pointer;
+            border-radius: 5px;
+            transform: translateY(-2px);
+        }
+
+        #navbar {
+            display: flex;
+            padding: 5px 0px;
+            width: 440px;
+        }
+
+        main {
+            justify-content: center;
+        }
+
+        .btn {
+            width: 86px;
+            height: 30px;
+            margin: 10px;
+            border-radius: 6px;
+            border: 2px solid #00FFCB;
+            box-shadow: 0 0 60px rgba(0, 255, 203, .64);
+            color: white;
+            background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+            color: #313133;
+            letter-spacing: 0.7px;
+        }
+
+        .btn:hover {
+            cursor: pointer;
+            background-color: rgb(68, 148, 254);
+            box-shadow: 3px 4px 7px rgb(187, 187, 187);
+
+        }
+
+        header {
+            display: flex;
+            box-shadow: 0px 3px 3px rgb(194 194 194);
+        }
+
+        .viewlist {
+            margin-left: 56%;
+        }
+
+        #sub {
+            margin: 12px 63px;
+        }
+
+        .doctors {
+            width: 100%;
+            margin-top: 20px;
+            text-align: center;
+            background-color: #c1f4f4;
+            height: 60vh;
+            padding: 20px 0px;
+        }
+        .doctors h2{
+            margin: 15px 5px 32px 5px;
+        }
+        .doctors p{
+            padding: 0px 20px;
+        }
+
+        .imgs {
+            display: flex;
+        }
+
+        .img img {
+            height: 229px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .img {
+            margin: 45px 43px;
+            margin-bottom: 5px;
+        }
+
+        .img-container img {
+            height: 100vh;
+        }
+
+        .img-container {
+            display: flex;
+            width: 91%;
+            animation: slide 16s infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                transform: translateX(0%);
+            }
+
+            25% {
+                transform: translateX(0%);
+            }
+
+            30% {
+                transform: translateX(-100%);
+            }
+
+            50% {
+                transform: translatex(-110%);
+            }
+
+            55% {
+                transform: translatex(-215%);
+            }
+
+            75% {
+                transform: translatex(-215%);
+            }
+
+            80% {
+                transform: translatex(-320%);
+            }
+
+            100% {
+                transform: translatex(-320%);
+            }
+        }
+
+        .contain {
+            width: 91%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            margin-top: 20%;
+            left: 50%;
+            overflow: hidden;
+            z-index: -1;
+            box-shadow: 4px 5px 6px rgb(170, 170, 170);
+        }
+
+        .content {
+            z-index: 1;
+            text-align: center;
+            color: white;
+            padding-top: 10%;
+            height: 79vh;
+            background-color: rgba(0, 0, 0, 0.199);
+        }
+
+        .content h1 {
+            text-shadow: 4px 4px 6px grey;
+        }
+
+        .content p {
+            width: 50%;
+            margin-left: 315px;
+            margin-top: 20px;
+        }
+
+        .content img {
+            width: 60px;
+        }
+
+        #cname {
+            font-size: 80px;
+        }
+
+        #popup {
+            position: fixed;
+            transform: translate(-50%, -50%);
+            top: 40%;
+            width: 30vw;
+            margin: 70px 0px 0px 650px;
+            background-color: white;
+            padding: 10px;
+            z-index: 2;
+            box-shadow: 15px 18px 24px #367381;
+            visibility: hidden;
+            opacity: 0;
+            transition: 0.5s;
+            text-align: center;
+            border-radius: 5px;
+        }
+
+        #popup.active {
+            top: 50%;
+            visibility: visible;
+            opacity: 1;
+            transition: 0.5s;
+        }
+
+        #full {
+            height: max-content;
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            transition: 0.5s;
+
+        }
+
+        #full.active {
+            filter: blur(25px);
+        }
+
+        #popup img {
+            width: 20px;
+            margin-left: 96%;
+        }
+
+        #login_form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+        }
+
+        #login_form input {
+            margin-bottom: 20px;
+            height: 38px;
+            font-size: 15px;
+            padding: 0px 8px;
+            border: none;
+            outline: 0;
+            border-bottom: 2px solid grey;
+        }
+
+        #login_form button {
+            height: 38px;
+            margin: 7px 0px;
+            background-color: rgb(11, 157, 254);
+            border: 2px solid rgb(33, 165, 253);
+            font-size: 20px;
+        }
+
+        #login_form button:hover {
+            background-color: rgb(35, 167, 255);
+            box-shadow: 2px 2px 3px rgb(162, 162, 162);
+        }
+
+        #login_form input:hover {
+            border-bottom: 2px solid rgb(9, 182, 208);
+        }
+
+        .button {
+            min-width: 100px;
+            min-height: 35px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            color: #313133;
+            background: #4FD1C5;
+            background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+            border-radius: 100px;
+            border: none;
+            box-shadow: 12px 12px 24px rgba(79, 209, 197, .64);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            padding: 10px;
+        }
+        .button:hover {
+            color: #313133;
+            transform: translate(-3px);
+        }
+

@@ -1,0 +1,142 @@
+        html {
+            scroll-behavior: smooth;
+        }
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        .ul {
+            display: flex;
+        }
+
+        .list {
+            list-style: none;
+            margin: 10px 20px;
+            transition: all 0.3s ease-in-out 0s;
+        }
+
+        .list a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .list:hover {
+            padding: 3px 5px;
+            background-color: rgb(68, 148, 254);
+            box-shadow: 2px 3px 7px #012d5f;
+            cursor: pointer;
+            border-radius: 5px;
+            transform: translateY(-2px);
+        }
+
+        #navbar {
+            display: flex;
+            padding: 5px 0px;
+            width: 440px;
+        }
+
+        main {
+            justify-content: center;
+        }
+
+        header {
+            display: flex;
+            box-shadow: 0px 3px 3px rgb(194 194 194);
+        }
+
+        .viewlist {
+            margin-left: 56%;
+        }
+
+        #sub {
+            margin: 12px 63px;
+        }
+
+        #cname {
+            font-size: 80px;
+        }
+
+        #full {
+            height: max-content;
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            transition: 0.5s;
+
+        }
+        .fbutton {
+            min-width: 100px;
+            min-height: 35px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 1.3px;
+            color: #313133;
+            background: #4FD1C5;
+            background-color: linear-gradient(90deg, rgba(134, 255, 239) 0%, rgba(30, 135, 125) 100%);
+            border-radius: 100px;
+            border: none;
+            box-shadow: 3px 3px 5px rgb(30 135 125);
+            transition: all 0.3s ease-in-out 0s;
+            cursor: pointer;
+            padding: 10px;
+
+        }
+        .fbutton:hover{
+            background: linear-gradient(90deg, rgb(141, 254, 239) 0%, rgb(44, 156, 145) 100%);
+        }
+
+        body{
+            background: linear-gradient(174deg,#51E2F5 0%, #9DF9EF 30%, #EDF7F6 50%, #ffa8B6 75%, #a28089 100%);
+        }
+
+        /* form*/
+        .bookform{
+            /* border: 2px solid rgb(6, 174, 207); */
+            padding: 20px;
+            width: 283px;
+            margin-left: 37%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            /* border-radius: 10px; */
+            background: linear-gradient(90deg, rgba(129, 230, 217, 1) 0%, rgba(79, 209, 197, 1) 100%);
+            box-shadow: 15px 18px 24px #367381;
+        }
+
+        #bookform{
+            margin: 10px 10px ;
+        }
+        #bookform label{
+            margin: 0px 5px;
+        }
+        #bookform input, #gender{
+            margin: 9px -3px;
+            height: 21px;
+            outline: 0;
+            background-color: rgb(92, 232, 213);
+        }
+
+        #bookform input{
+            border: none;
+            outline: 0;
+            border-bottom: 2px solid grey;
+            background-color: rgb(86 209 193);
+        }
+        #bookform input:hover{
+            background-color: rgb(92, 228, 210);
+        }
+
+        #gender{
+            width: 102px;
+            margin-right: 44px;
+        }
+
+        #bookform button{
+            margin: 35px 14px;
+            margin-bottom: 5px;
+            width: 79px;
+            height: 32px;
+            border-radius: 5px;
+        }
